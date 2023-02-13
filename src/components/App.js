@@ -4,7 +4,7 @@ import { Loader } from './Loader';
 import { PhotoFrame } from './PhotoFrame';
 
 const fetchPosts = async (id) => {
-  let url = `https://jsonplaceholder.typicode.com/photo/${id}`;
+  let url = `https://jsonplaceholder.typicode.com/photos/${id}`;
   return fetch(url);
 }
 const App = () => {
