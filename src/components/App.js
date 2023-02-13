@@ -24,7 +24,7 @@ const App = () => {
   
   useEffect(() => {
     loadData();
-  },[]);
+  }, []);
   
   useEffect(() => {
     setData(null)
@@ -33,9 +33,9 @@ const App = () => {
   
   return(
     <div>
-    <span>Id number</span>
-    <input type="number" onChange={handleChange} />
-    {data == null ? ( <loader/> ) : <photoFrame url={data.url} title={data.title}/>
+      <span>Id number</span>
+      <input type="number" onChange={handleChange} />
+      {data == null ? ( <loader/> ) : <photoFrame url={data.url} title={data.title}/>
    </div>
  )
 }
