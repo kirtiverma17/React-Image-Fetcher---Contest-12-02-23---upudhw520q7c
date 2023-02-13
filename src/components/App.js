@@ -35,7 +35,7 @@ const App = () => {
     <div>
       <span>Id number</span>
       <input type="number" onChange={handleChange} />
-      {data == null ? ( <loader/> ) : <photoFrame url={data.url} title={data.title}/>
+      {data == null ? ( <Loader/> ) : <PhotoFrame url={data.url} title={data.title}/>
    </div>
  )
 }
